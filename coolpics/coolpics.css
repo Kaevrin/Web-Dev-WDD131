@@ -1,0 +1,121 @@
+ @import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+
+
+body {
+    max-width: 1600px;
+    width: 100%;
+    font-size: 2em;
+    font-family: var(--primary-font);
+    margin: 0 auto;
+}
+
+a:link, a:visited {
+    color: var(--accent-color)
+}
+header {
+    text-align: center;
+}
+header, footer {
+    background-color: var(--primary-color); 
+    color: var(--text-light);
+}
+main {
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 a, h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: auto auto;
+}
+
+figure {
+    box-shadow: 0.25em 0.25em 0.5em black;
+    padding: 5px;
+    width: 250px;
+    align-content: center;
+    
+}
+
+#title, #title a, #copyright {
+    margin: 0 auto;
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+#menu {
+    background: none;
+    border: none;
+    width: 250px;
+    height: 50px;
+    font-size: 1em;
+    color: inherit;
+    display: none;
+  }
+
+#menu:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: inherit;
+    padding: 10px 25px;
+}
+
+footer {
+    height: 100px;
+    margin: 2em auto auto auto;
+    padding:  10px 100px;
+}
+
+
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    #menu {
+        display: contents;
+    }
+    nav {
+        display: none;
+    }
+    
+}
