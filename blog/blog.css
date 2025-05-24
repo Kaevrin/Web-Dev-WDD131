@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --primary-color:#ddd8c4;
+    --secondary-color:#a3c9a8;
+    --accent-color:#0d1b2a;
+    --heading-font: "Lora", Impact, serif;
+    --paragraph-font: Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+
+}
+
+#pagetitle, .booktitle {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+#pagetitle {
+    border-bottom: 2px solid var(--accent-color);
+    font-size: 4em;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 0 0;
+}
+
+nav li {
+    font-size: 1.75em;
+    list-style-type: none;
+    padding: 0 45px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+header {
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+main {
+    flex: 1;
+    display:grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    background-color: var(--primary-color);
+    border: px solid var(--accent-color);
+}
+
+#blogpostcontainer {
+    padding: 0 25px 0 25px;
+}
+
+.blogpost {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.blogpostmetainfo {
+    width: 80%;
+    border-right: 2px solid var(--accent-color);
+}
+.blogpostcontent {
+    width: 90%;
+    background-color: var(--secondary-color);
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 1em;
+}
+
+#filters {
+    border-left: 2px solid var(--accent-color);
+    background-color: var(--primary-color);
+}
+
+.datetime, .ages, .genre, .score {
+    text-align: end;
+    padding: 0 10px;
+}
+
+.datetime {
+    font-size: 1.5em;
+}
+
+.skiptocontent {
+    position:absolute;
+    top: -40px;
+}
+.skiptocontent:focus {
+    top:0;
+}
