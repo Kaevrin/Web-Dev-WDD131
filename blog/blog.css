@@ -37,6 +37,9 @@ body {
 
 nav {
     background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--accent-color);
+
 }
 
 nav ul {
@@ -64,9 +67,9 @@ p {
 
 header {
     background-color: var(--primary-color);
-    border-bottom: 2px solid var(--accent-color);
     margin: 0 auto;
     width: 100%;
+    padding-bottom: 10px;
 
 }
 
@@ -88,20 +91,19 @@ main {
 }
 
 .blogpostmetainfo {
+    padding: 10px;
     width: 80%;
     border-right: 2px solid var(--accent-color);
+    line-height: 50%;
 }
 .blogpostcontent {
-    width: 90%;
-    background-color: var(--secondary-color);
     margin: 10px auto;
-    padding: 15px;
-    border-radius: 1em;
 }
 
 #filters {
-    border-left: 2px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     background-color: var(--primary-color);
+    margin: 0 10px;
 }
 
 .datetime, .ages, .genre, .score {
@@ -119,4 +121,14 @@ main {
 }
 .skiptocontent:focus {
     top:0;
+}
+
+.booktitle {
+    margin: 0 auto;
+}
+
+.bookcover {
+    width: 240px;
+    margin: 20px auto;
+    display: block;
 }
