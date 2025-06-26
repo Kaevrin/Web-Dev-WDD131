@@ -74,7 +74,7 @@ header p {
     width: 30px;
 }
 
-#recipecontainer {
+#recipe {
     margin: 1em;
     border: 2px solid black;
     border-radius: 1em;
@@ -83,14 +83,15 @@ header p {
     background-color: var(--secondary-color);
 }
 
-#recipecontainer img {
+#recipe img {
   flex-shrink: 1;       /* allow shrinking */
   height: auto;
   object-fit: contain;
   width: 100%;
+  max-width: 300px;
 }
 
-#recipecontainer p {
+#recipe p {
     color: var(--text-dark);
     
 }
@@ -138,7 +139,7 @@ footer {
     font-size: 0.9em;
   }
 
-  #recipecontainer {
+  #recipe {
     flex-direction: column;
     align-items: center;
   }
@@ -148,7 +149,7 @@ footer {
     flex-direction: column;
   }
 
-  #recipecontainer img {
+  #recipe img {
     max-width: 100%;
     margin-bottom: 1em;
   }
@@ -163,7 +164,7 @@ footer {
 
 @media (max-width: 960px) {
   /* Styles for tablets */
-  #recipecontainer {
+  #recipe {
     flex-direction: column;
     align-items: center;
   }

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-});
+
 
 
 function countParticipants() {
@@ -100,3 +100,5 @@ function successTemplate(info) {
     document.getElementById("summary").insertAdjacentHTML("beforeend", `<p>${info}</p>`);
  
 }
+
+});
