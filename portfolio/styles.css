@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: #17161b;
+  --secondary-color: #b3a9a8;
+  --accent1-color: #ad2e24;
+  --accent2-color: white;
+
+
+  --heading-font: "Tomorrow";
+  --paragraph-font: "Trebuchet MS";
+
+
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: var(--primary-color);
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: var(--primary-color);
+
+  --nav-link-color: var(--accent1-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+}
+
+#siteicon {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent1-color);
+  font-size: 2em;
+  padding: 0em 1em;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-color);
+  padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-color);
+}
+
+header {
+  background-color: var(--paragraph-background-color);
+  height: 225px;
+}
+
+main {
+  clear: both;
+  background-color: var(--paragraph-background-color);
+}
+
+.project {
+  border: 2px solid var(--secondary-color);
+  margin: 10px;
+  padding: 10px;
+}
+
+.projecttitle {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
