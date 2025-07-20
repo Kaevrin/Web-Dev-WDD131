@@ -14,7 +14,7 @@
   --headline-color-on-white: var(--primary-color);
   --headline-color-on-color: var(--primary-color);
   --paragraph-color-on-white: var(--primary-color);
-  --paragraph-color-on-color: white;
+  --paragraph-color-on-color: var(--primary-color);
   --paragraph-background-color: var(--primary-color);
 
   --nav-link-color: var(--accent1-color);
@@ -127,6 +127,7 @@ main {
   border: 2px solid var(--secondary-color);
   margin-left: 2em;
   margin-top: 0;
+  background-color: var(--secondary-color);
 }
 
 .container {
@@ -134,6 +135,7 @@ main {
   padding: 1em;
   margin-left: 2em;
   margin-bottom: 2em;
+  background-color: var(--secondary-color);
 }
 
 #contacts {
