@@ -29,10 +29,12 @@ fetch(`https://api.github.com/users/${username}/repos`)
             desc.textContent = repo.description || "No description available";
 
             const lang = document.createElement("p");
-            if (repo.language && repo.html_url) {
-                lang.innerHTML = `Coded in ${repo.language} - [<a class="projectlink" href="${repo.html_url}" target="_blank">${repo.html_url}</a>]`;
+
+            if (repo.html_url) {
+                const languageText = repo.language ? `Coded in ${repo.language}` : `Language unknown`;
+                lang.innerHTML = `${languageText} - [<a class="projectlink" href="${repo.html_url}" target="_blank">${repo.html_url}</a>]`;
             } else {
-                lang.textContent = "No language found";
+                lang.textContent = "Project link not available.";
             }
 
             infocontainer.appendChild(desc);

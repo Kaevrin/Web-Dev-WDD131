@@ -151,6 +151,14 @@ footer p {
   color: var(--secondary-color);
 }
 
+#contentimage {
+  float: right;
+  margin: 0 0 1em 1em;
+  width: 50%; /* or a fixed width */
+  max-width: 500px;
+  height: auto;
+}
+
 @media (max-width: 730px) {
   #siteicon {
     display: none;
