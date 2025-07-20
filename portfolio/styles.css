@@ -143,3 +143,7 @@ main {
 #contacts a {
   color: var(--accent1-color);
 }
+
+footer p {
+  margin-left: 8em;
+}
