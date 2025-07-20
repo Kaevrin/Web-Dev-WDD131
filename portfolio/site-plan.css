@@ -51,6 +51,11 @@ h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
+
+h1 {
+  margin: 100px;
+}
+
 h2 {
   text-align: center;
 }
